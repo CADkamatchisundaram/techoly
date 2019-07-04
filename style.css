@@ -1,0 +1,78 @@
+body{
+background:black;
+}
+svg{
+  width: 99%;
+  height: 99%;
+}
+.sun {
+  fill:url(#sun);
+  transform: rotate(10deg);
+  transform-origin: center;
+}
+.earth-orbit {
+  fill: url(#sunshine);
+  stroke:#E6E6E6;
+  stroke-width:2;
+}
+.earth-group{
+  transform-origin: center;
+  animation: earth-group 13s linear infinite;
+}
+.earth-limit{
+  fill: none;
+}
+.earth {
+  fill:url(#earth);
+  transform-origin: center;
+  animation: rotation-earth 13s linear infinite;
+}
+
+
+.moon {
+  fill:#E6E6E6;
+  transform-origin: center;
+  animation: rotation-moon 6s linear infinite;
+}
+
+@keyframes earth-group {
+	0%{
+		transform: rotate(0deg) translate(3100px);
+	}
+	100%{
+		transform: rotate(-360deg) translate(3100px);
+	}
+}
+@keyframes rotation-earth {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes moon-group {
+	0%{
+		transform: rotate(0deg) translate(500px);
+	}
+	100%{
+		transform: rotate(-360deg) translate(500px);
+	}
+}
+@keyframes rotation-moon {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes rotation-mars {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
